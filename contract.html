@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contract — Adora Events</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Adora Events</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contract.html">Contract</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Book Date</a>
+    </nav>
+    <div class="mobile-toggle">☰</div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="label">Booking — Digital Contract (19 Clauses)</div>
+  <h1 class="font-display" style="font-size:48px;font-weight:300;line-height:0.9">Secure your date<br>in minutes.</h1>
+  <p style="margin-top:16px;max-width:60ch;font-size:13px;color:rgba(0,0,0,0.6)">Fill, review, sign and receive an instant printable version. Mirrors our official catering services agreement governed by laws of Zimbabwe.</p>
+
+  <div style="margin-top:48px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:32px" class="two-col">
+    <div style="background:white;border:1px solid var(--line);padding:24px">
+      <div class="form-grid">
+        <div class="input-group"><label>Client Full Name</label><input id="fullName" placeholder="Tinashe Mupfurutsa"></div>
+        <div class="input-group"><label>ID Reg No</label><input id="idReg" placeholder="63-1234567A12"></div>
+        <div class="input-group"><label>Phone</label><input id="phone" placeholder="+263 718 561 434"></div>
+        <div class="input-group"><label>Email</label><input id="email" placeholder="client@email.com"></div>
+        <div class="input-group"><label>Event Venue</label><input id="venue" placeholder="Borrowdale Manor"></div>
+        <div class="input-group"><label>Event Date</label><input id="date" type="date"></div>
+        <div class="input-group"><label>Guest Count</label><input id="guests" placeholder="180"></div>
+        <div class="input-group"><label>Total Price (USD)</label><input id="total" placeholder="3500"></div>
+      </div>
+      <div class="input-group" style="margin-top:16px"><label>Notes</label><textarea id="notes" rows="3" placeholder="Allergies, dietary, special requests"></textarea></div>
+      <button class="btn" style="margin-top:20px;width:100%" onclick="generatePreview()">Generate Contract Preview</button>
+    </div>
+    <div id="preview" style="background:#fcfbf8;border:1px solid var(--line);padding:24px;font-size:12px;line-height:1.7;min-height:400px">
+      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;opacity:0.5">Preview</div>
+      <div class="font-display" style="font-size:20px;margin-top:8px">Catering Services Agreement</div>
+      <div style="margin-top:12px;opacity:0.6">Fill form on left to see instant preview. Your contract includes 19 clauses: Engagement, Services, Menu & Tastings, Guest Count, Venue Access, Duration, Payment, Deposit, Late Payment, Cancellation, Force Majeure, Staff & Equipment, Client Responsibilities, Health & Safety, Liability, Variations, Promotional Use, Governing Law (Zimbabwe), Entire Agreement & Signatures.</div>
+    </div>
+  </div>
+</section>
+<script>
+function generatePreview(){
+  const get = id=>document.getElementById(id).value||'________';
+  document.getElementById('preview').innerHTML = `
+    <div style="display:flex;justify-content:space-between"><div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;opacity:0.5">ADORA EVENTS</div><div style="font-size:10px;opacity:0.5">${new Date().toLocaleDateString()}</div></div>
+    <div class="font-display" style="font-size:22px;margin-top:12px">Catering Services Agreement</div>
+    <div style="margin-top:16px"><strong>Client:</strong> ${get('fullName')}<br><strong>ID:</strong> ${get('idReg')}<br><strong>Venue:</strong> ${get('venue')}<br><strong>Date:</strong> ${get('date')}<br><strong>Guests:</strong> ${get('guests')}<br><strong>Total:</strong> USD ${get('total')}</div>
+    <div style="margin-top:16px;border-top:1px solid #eee;padding-top:12px"><strong>Notes:</strong> ${get('notes')}</div>
+    <div style="margin-top:24px;font-size:11px;opacity:0.7">For Adora Events: Ethel@adora-events.co.zw / Call / WhatsApp +263 718 561 434<br>Room 105 1st Floor Sahil Building, Harare Zimbabwe</div>
+    <div style="margin-top:20px"><button class="btn" onclick="window.print()">Print / Save PDF</button></div>
+  `;
+}
+</script>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:24px;margin-bottom:16px">Adora Events</div>
+      <p style="font-size:12px;line-height:1.7;color:rgba(255,255,255,0.5);max-width:32ch">Quiet luxury catering & atmosphere design. Harare, Zimbabwe. Celebrations edited with intention.</p>
+      <div style="margin-top:24px;display:flex;gap:12px">
+        <a href="#" style="width:36px;height:36px;display:grid;place-items:center;border-radius:999px;border:1px solid rgba(255,255,255,0.15)">Fb</a>
+        <a href="#" style="width:36px;height:36px;display:grid;place-items:center;border-radius:999px;border:1px solid rgba(255,255,255,0.15)">Ig</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:20px">Contact</div>
+      <a href="tel:+263718561434">Call / WhatsApp: +263 718 561 434</a>
+      <a href="mailto:ethel@adora-events.co.zw">ethel@adora-events.co.zw</a>
+      <div style="margin-top:12px;font-size:11px;line-height:1.6;color:rgba(255,255,255,0.4)">Room 105 1st Floor Sahil Building<br>Robert Mugabe Rd / Angwa Street<br>Harare Zimbabwe</div>
+    </div>
+    <div>
+      <div style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:20px">Studio</div>
+      <a href="services.html">Services & Pricing</a>
+      <a href="gallery.html">Selected Work</a>
+      <a href="about.html">Our Philosophy</a>
+      <a href="contract.html">Catering Contract</a>
+    </div>
+    <div>
+      <div style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:20px">Est. 2016</div>
+      <div style="font-size:12px;line-height:1.7;color:rgba(255,255,255,0.5)">Bespoke catering and atmospheric design for weddings, lobola and cultural unions — where every detail is intentional.</div>
+    </div>
+  </div>
+  <div class="copy">
+    <span>© 2025 Adora Events — Timeless Celebrations</span>
+    <span>Harare • Borrowdale • Meikles • Private Estates</span>
+  </div>
+</footer>
+<script src="js/main.js"></script></body></html>
