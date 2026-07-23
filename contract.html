@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contract — Adora Events</title><link rel="stylesheet" href="css/style.css"></head>
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catering Contract — Secure Your Date | Adora Events</title>
+<meta name="description" content="19-clause catering agreement governed by Zimbabwe law. Digital preview, print & sign. Transparent deposits, cancellations & service terms.">
+<link rel="canonical" href="https://adora-events.co.zw/contract.html">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+<meta property="og:title" content="Secure Your Date — 19-Clause Contract">
+<meta property="og:description" content="19-clause catering agreement governed by Zimbabwe law. Digital preview, print & sign. Transparent deposits, cancellations & service terms.">
+<meta property="og:image" content="https://adora-events.co.zw/images/favicon-512.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_ZW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Secure Your Date — 19-Clause Contract">
+<meta name="twitter:description" content="19-clause catering agreement governed by Zimbabwe law. Digital preview, print & sign. Transparent deposits, cancellations & service terms.">
+<meta name="twitter:image" content="https://adora-events.co.zw/images/favicon-512.png">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
 <body>
 
 <header class="site-header">
@@ -50,13 +68,17 @@
 <script>
 function generatePreview(){
   const get = id=>document.getElementById(id).value||'________';
+  const waText = `Hello Adora Events!%0A%0A*Contract Inquiry*%0AClient: ${get('fullName')}%0AID: ${get('idReg')}%0APhone: ${get('phone')}%0AEmail: ${get('email')}%0AVenue: ${get('venue')}%0ADate: ${get('date')}%0AGuests: ${get('guests')}%0ATotal: USD ${get('total')}%0ANotes: ${get('notes')}%0A%0APlease send contract PDF.`;
   document.getElementById('preview').innerHTML = `
     <div style="display:flex;justify-content:space-between"><div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;opacity:0.5">ADORA EVENTS</div><div style="font-size:10px;opacity:0.5">${new Date().toLocaleDateString()}</div></div>
     <div class="font-display" style="font-size:22px;margin-top:12px">Catering Services Agreement</div>
-    <div style="margin-top:16px"><strong>Client:</strong> ${get('fullName')}<br><strong>ID:</strong> ${get('idReg')}<br><strong>Venue:</strong> ${get('venue')}<br><strong>Date:</strong> ${get('date')}<br><strong>Guests:</strong> ${get('guests')}<br><strong>Total:</strong> USD ${get('total')}</div>
+    <div style="margin-top:16px"><strong>Client:</strong> ${get('fullName')}<br><strong>ID:</strong> ${get('idReg')}<br><strong>Phone:</strong> ${get('phone')}<br><strong>Email:</strong> ${get('email')}<br><strong>Venue:</strong> ${get('venue')}<br><strong>Date:</strong> ${get('date')}<br><strong>Guests:</strong> ${get('guests')}<br><strong>Total:</strong> USD ${get('total')}</div>
     <div style="margin-top:16px;border-top:1px solid #eee;padding-top:12px"><strong>Notes:</strong> ${get('notes')}</div>
     <div style="margin-top:24px;font-size:11px;opacity:0.7">For Adora Events: Ethel@adora-events.co.zw / Call / WhatsApp +263 718 561 434<br>Room 105 1st Floor Sahil Building, Harare Zimbabwe</div>
-    <div style="margin-top:20px"><button class="btn" onclick="window.print()">Print / Save PDF</button></div>
+    <div style="margin-top:20px;display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn" onclick="window.print()">Print / Save PDF</button>
+      <a href="https://wa.me/263718561434?text=${waText}" target="_blank" class="btn" style="background:#25D366;border-color:#25D366">Send via WhatsApp</a>
+    </div>
   `;
 }
 </script>
