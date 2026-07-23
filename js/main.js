@@ -1,24 +1,19 @@
-
-document.addEventListener('DOMContentLoaded',()=>{
+// Adora Events - mobile nav + small interactions
+document.addEventListener('DOMContentLoaded', ()=>{
   const toggle = document.querySelector('.mobile-toggle');
   const nav = document.querySelector('.nav');
-  if(toggle){
-    toggle.addEventListener('click',()=>{
-      nav.style.display = nav.style.display==='flex' ? 'none' : 'flex';
-      nav.style.flexDirection='column';
-      nav.style.position='absolute';
-      nav.style.top='60px';
-      nav.style.left='0';
-      nav.style.right='0';
-      nav.style.background='var(--paper)';
-      nav.style.padding='24px';
-      nav.style.borderBottom='1px solid var(--line)';
-    })
+  if(toggle && nav){
+    toggle.addEventListener('click', ()=>{
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      nav.style.flexDirection = 'column';
+      nav.style.position = 'absolute';
+      nav.style.top = '64px';
+      nav.style.right = '16px';
+      nav.style.background = '#fdfbf7';
+      nav.style.border = '1px solid #ece6d9';
+      nav.style.padding = '16px';
+      nav.style.borderRadius = '16px';
+      nav.style.boxShadow = '0 12px 32px rgba(0,0,0,0.1)';
+    });
   }
-  // Active link
-  const path = location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav a').forEach(a=>{
-    const href = a.getAttribute('href');
-    if(href===path || (path==='' && href==='index.html')) a.classList.add('active');
-  })
-})
+});
