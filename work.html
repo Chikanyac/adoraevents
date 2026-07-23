@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { display: ['Cormorant Garamond','serif'], sansx: ['Inter','sans-serif'] } } } }
+</script>
+<style>
+body{font-family:'Inter',sans-serif; background:#fcfaf7; color:#111;}
+.font-display{font-family:'Cormorant Garamond',serif;}
+.font-sansx{font-family:'Inter',sans-serif;}
+.label-micro{font-family:'Inter',sans-serif; font-size:10px; letter-spacing:0.22em; text-transform:uppercase; opacity:0.5;}
+.input-underline-light{width:100%; background:transparent; border:0; border-bottom:1px solid rgba(0,0,0,0.15); padding:12px 0; outline:none;}
+.input-underline-light:focus{border-bottom-color:#111;}
+.reveal{opacity:1;}
+</style>
+
+  <title>Adora Events - Work</title>
+</head>
+<body class="selection:bg-[#c6a87c]/30">
+
+<header class="sticky top-0 z-50 bg-[#fcfaf7]/90 backdrop-blur-xl border-b border-black/[0.06]">
+  <div class="mx-auto max-w-[1320px] px-6 md:px-10 h-[72px] flex items-center justify-between">
+    <a href="home.html" class="flex items-center gap-2">
+      <span class="font-display text-[22px] tracking-tight">ADORA</span>
+      <span class="font-sansx text-[10px] tracking-[0.22em] opacity-60 -translate-y-1">EVENTS</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8"><a href="home.html" class="font-sansx text-[11px] tracking-[0.18em] uppercase transition opacity-60 hover:opacity-100">Home</a>
+<a href="work.html" class="font-sansx text-[11px] tracking-[0.18em] uppercase transition opacity-100 underline underline-offset-8 decoration-[#c6a87c]">Work</a>
+<a href="services.html" class="font-sansx text-[11px] tracking-[0.18em] uppercase transition opacity-60 hover:opacity-100">Services</a>
+<a href="contract.html" class="font-sansx text-[11px] tracking-[0.18em] uppercase transition opacity-60 hover:opacity-100">Contract</a>
+<a href="journal.html" class="font-sansx text-[11px] tracking-[0.18em] uppercase transition opacity-60 hover:opacity-100">Journal</a>
+<a href="book.html" class="font-sansx text-[11px] tracking-[0.18em] uppercase transition opacity-60 hover:opacity-100">Book</a>
+</nav>
+    <a href="book.html" class="hidden md:inline-flex h-[44px] px-7 items-center rounded-full bg-[#0a0a0b] text-white font-sansx text-[11px] tracking-[0.18em] uppercase">Inquire</a>
+    <button onclick="document.getElementById('mobile-nav').classList.toggle('hidden')" class="md:hidden font-sansx text-[11px] tracking-widest uppercase">Menu</button>
+  </div>
+  <div id="mobile-nav" class="hidden md:hidden border-t border-black/10 px-6 py-6 space-y-4 bg-[#fcfaf7]">
+    <a href="home.html" class="font-sansx text-[11px] tracking-[0.18em] uppercase transition opacity-60 hover:opacity-100">Home</a>
+<a href="work.html" class="font-sansx text-[11px] tracking-[0.18em] uppercase transition opacity-100 underline underline-offset-8 decoration-[#c6a87c]">Work</a>
+<a href="services.html" class="font-sansx text-[11px] tracking-[0.18em] uppercase transition opacity-60 hover:opacity-100">Services</a>
+<a href="contract.html" class="font-sansx text-[11px] tracking-[0.18em] uppercase transition opacity-60 hover:opacity-100">Contract</a>
+<a href="journal.html" class="font-sansx text-[11px] tracking-[0.18em] uppercase transition opacity-60 hover:opacity-100">Journal</a>
+<a href="book.html" class="font-sansx text-[11px] tracking-[0.18em] uppercase transition opacity-60 hover:opacity-100">Book</a>
+
+  </div>
+</header>
+
+<main>
+
+<section class="mx-auto max-w-[1320px] px-6 md:px-10 py-24 md:py-32">
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+    <div>
+      <div class="label-micro mb-4">Selected Work — 2016—2025</div>
+      <h2 class="font-display text-[40px] md:text-[56px] leading-[0.95] tracking-tight">A gallery of<br><span class="italic font-light">atmospheres held</span></h2>
+    </div>
+    <p class="max-w-[320px] font-sansx text-[13px] leading-6 opacity-60">Every celebration is edited like a film — light, texture, taste and ritual composed to linger.</p>
+  </div>
+  <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+    
+    <div class="group relative overflow-hidden h-[520px] bg-[#eee]">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800" alt="Garden Wedding — Borrowdale" class="h-full w-full object-cover transition duration-[1200ms] group-hover:scale-[1.06]">
+      <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+        <div class="font-sansx text-[11px] tracking-[0.18em] uppercase text-white/80">Garden Wedding — Borrowdale</div>
+      </div>
+    </div>
+    
+    <div class="group relative overflow-hidden h-[380px] bg-[#eee]">
+      <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=800" alt="Lobola Ceremony — Harare" class="h-full w-full object-cover transition duration-[1200ms] group-hover:scale-[1.06]">
+      <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+        <div class="font-sansx text-[11px] tracking-[0.18em] uppercase text-white/80">Lobola Ceremony — Harare</div>
+      </div>
+    </div>
+    
+    <div class="group relative overflow-hidden h-[460px] bg-[#eee]">
+      <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800" alt="Corporate Gala — Meikles" class="h-full w-full object-cover transition duration-[1200ms] group-hover:scale-[1.06]">
+      <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+        <div class="font-sansx text-[11px] tracking-[0.18em] uppercase text-white/80">Corporate Gala — Meikles</div>
+      </div>
+    </div>
+    
+    <div class="group relative overflow-hidden h-[400px] bg-[#eee]">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800" alt="Intimate Dining — Private" class="h-full w-full object-cover transition duration-[1200ms] group-hover:scale-[1.06]">
+      <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+        <div class="font-sansx text-[11px] tracking-[0.18em] uppercase text-white/80">Intimate Dining — Private</div>
+      </div>
+    </div>
+    
+    <div class="group relative overflow-hidden h-[520px] bg-[#eee]">
+      <img src="https://images.unsplash.com/photo-1520854221256-17451ccdf07b?q=80&w=800" alt="Traditional Celebration" class="h-full w-full object-cover transition duration-[1200ms] group-hover:scale-[1.06]">
+      <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+        <div class="font-sansx text-[11px] tracking-[0.18em] uppercase text-white/80">Traditional Celebration</div>
+      </div>
+    </div>
+    
+    <div class="group relative overflow-hidden h-[360px] bg-[#eee]">
+      <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=800" alt="Evening Reception" class="h-full w-full object-cover transition duration-[1200ms] group-hover:scale-[1.06]">
+      <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+        <div class="font-sansx text-[11px] tracking-[0.18em] uppercase text-white/80">Evening Reception</div>
+      </div>
+    </div>
+    
+    <div class="group relative overflow-hidden h-[480px] bg-[#eee]">
+      <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800" alt="Floral Tablescape" class="h-full w-full object-cover transition duration-[1200ms] group-hover:scale-[1.06]">
+      <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+        <div class="font-sansx text-[11px] tracking-[0.18em] uppercase text-white/80">Floral Tablescape</div>
+      </div>
+    </div>
+    
+    <div class="group relative overflow-hidden h-[380px] bg-[#eee]">
+      <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800" alt="Sunset Vows" class="h-full w-full object-cover transition duration-[1200ms] group-hover:scale-[1.06]">
+      <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+        <div class="font-sansx text-[11px] tracking-[0.18em] uppercase text-white/80">Sunset Vows</div>
+      </div>
+    </div>
+    
+    <div class="group relative overflow-hidden h-[500px] bg-[#eee]">
+      <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=800" alt="Cultural Elegance" class="h-full w-full object-cover transition duration-[1200ms] group-hover:scale-[1.06]">
+      <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+        <div class="font-sansx text-[11px] tracking-[0.18em] uppercase text-white/80">Cultural Elegance</div>
+      </div>
+    </div>
+    
+    <div class="group relative overflow-hidden h-[420px] bg-[#eee]">
+      <img src="https://images.unsplash.com/photo-1520854221256-17451ccdf07b?q=80&w=800" alt="Timeless Detail" class="h-full w-full object-cover transition duration-[1200ms] group-hover:scale-[1.06]">
+      <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+        <div class="font-sansx text-[11px] tracking-[0.18em] uppercase text-white/80">Timeless Detail</div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+</main>
+
+
+<!-- Instagram Feed Section -->
+<section id="instagram" class="bg-[#fcfaf7] border-t border-black/[0.06]">
+  <div class="mx-auto max-w-[1320px] px-6 md:px-10 py-20 md:py-28">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+      <div class="reveal">
+        <div class="label-micro mb-4">Live From Studio — @adoraevents</div>
+        <h2 class="font-display text-[36px] md:text-[52px] leading-[0.9] tracking-tight">Behind the<br><span class="italic font-light">tables & toasts</span></h2>
+      </div>
+      <div class="reveal">
+        <p class="max-w-[320px] font-sansx text-[13px] leading-6 opacity-60 mb-6">Real prep, real celebrations. No filters — just linen, light and the quiet chaos before guests arrive. Updated weekly.</p>
+        <a href="https://instagram.com/adoraevents" target="_blank" class="h-[44px] px-7 inline-flex items-center rounded-full bg-[#0a0a0b] text-white font-sansx text-[11px] tracking-[0.18em] uppercase gap-2">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Follow on Instagram
+        </a>
+      </div>
+    </div>
+    
+    <!-- 6-image grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-[1px] bg-black/10 border border-black/10">
+      <a href="https://instagram.com/adoraevents" target="_blank" class="group relative aspect-square overflow-hidden bg-[#eee]">
+        <img src="images/gallery-7.webp" alt="Floral prep" class="h-full w-full object-cover transition duration-[800ms] group-hover:scale-[1.05]">
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition"></div>
+        <div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition"><div class="h-7 w-7 grid place-items-center rounded-full bg-white/90"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></div></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition"><div class="font-sansx text-[11px] text-white">Tablescape prep • 2d ago</div></div>
+      </a>
+      <a href="https://instagram.com/adoraevents" target="_blank" class="group relative aspect-square overflow-hidden bg-[#eee]">
+        <img src="images/gallery-1.webp" alt="Garden setup" class="h-full w-full object-cover transition duration-[800ms] group-hover:scale-[1.05]">
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition"><div class="font-sansx text-[11px] text-white">Borrowdale garden • 5d ago</div></div>
+      </a>
+      <a href="https://instagram.com/adoraevents" target="_blank" class="group relative aspect-square overflow-hidden bg-[#eee]">
+        <img src="images/gallery-5.webp" alt="Traditional detail" class="h-full w-full object-cover transition duration-[800ms] group-hover:scale-[1.05]">
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition"><div class="font-sansx text-[11px] text-white">Lobola details • 1w ago</div></div>
+      </a>
+      <a href="https://instagram.com/adoraevents" target="_blank" class="group relative aspect-square overflow-hidden bg-[#eee]">
+        <img src="images/gallery-10.webp" alt="Detail flatlay" class="h-full w-full object-cover transition duration-[800ms] group-hover:scale-[1.05]">
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition"><div class="font-sansx text-[11px] text-white">Stationery • 1w ago</div></div>
+      </a>
+      <a href="https://instagram.com/adoraevents" target="_blank" class="group relative aspect-square overflow-hidden bg-[#eee]">
+        <img src="images/gallery-3.webp" alt="Gala night" class="h-full w-full object-cover transition duration-[800ms] group-hover:scale-[1.05]">
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition"><div class="font-sansx text-[11px] text-white">Meikles gala • 2w ago</div></div>
+      </a>
+      <a href="https://instagram.com/adoraevents" target="_blank" class="group relative aspect-square overflow-hidden bg-[#eee]">
+        <img src="images/gallery-8.webp" alt="Sunset vows" class="h-full w-full object-cover transition duration-[800ms] group-hover:scale-[1.05]">
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition"><div class="font-sansx text-[11px] text-white">Sunset vows • 2w ago</div></div>
+      </a>
+    </div>
+    
+    <div class="mt-8 flex justify-center md:hidden">
+      <a href="https://instagram.com/adoraevents" target="_blank" class="h-[44px] px-7 inline-flex items-center rounded-full bg-[#0a0a0b] text-white font-sansx text-[11px] tracking-[0.18em] uppercase">View Instagram</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-[#0a0a0b] text-[#f5f2ed] border-t border-white/10">
+  <div class="mx-auto max-w-[1320px] px-6 md:px-10 py-16 grid md:grid-cols-[1.5fr_1fr_1fr] gap-12">
+    <div>
+      <div class="font-display text-[22px]">ADORA EVENTS</div>
+      <p class="mt-4 max-w-[320px] font-sansx text-[13px] leading-6 opacity-60">Quiet luxury catering & atmosphere design. Harare, Zimbabwe. Celebrations edited with intention.</p>
+      <div class="mt-8 font-sansx text-[11px] tracking-widest uppercase opacity-30">© 2025 Adora Events — Timeless Celebrations</div>
+    </div>
+    <div>
+      <div class="font-sansx text-[10px] tracking-[0.22em] uppercase text-white/40 mb-6">Contact</div>
+      <div class="space-y-3 font-sansx text-[13px] leading-6">
+        <div>Room 105 1st Floor Sahil Building<br>Robert Mugabe Rd / Angwa Street<br>Harare Zimbabwe</div>
+        <a href="tel:+263718561434" class="block hover:text-[#c6a87c]">Call / WhatsApp: +263 718 561 434</a>
+        <a href="mailto:ethel@adora-events.co.zw" class="block hover:text-[#c6a87c]">EMAIL: ethel@adora-events.co.zw</a>
+      </div>
+    </div>
+    <div>
+      <div class="font-sansx text-[10px] tracking-[0.22em] uppercase text-white/40 mb-6">Studio</div>
+      <div class="space-y-2 font-sansx text-[13px]">
+        <a href="work.html" class="block hover:text-white opacity-60 hover:opacity-100">Work Archive</a>
+        <a href="services.html" class="block hover:text-white opacity-60 hover:opacity-100">Services & Pricing</a>
+        <a href="contract.html" class="block hover:text-white opacity-60 hover:opacity-100">Catering Contract</a>
+        <a href="journal.html" class="block hover:text-white opacity-60 hover:opacity-100">Journal & Notes</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
